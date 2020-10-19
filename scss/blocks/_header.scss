@@ -1,0 +1,15 @@
+.header{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 0 0;
+    }
+
+    &__btn + &__btn {
+        margin: 0 0 0 28px;
+    }
+}

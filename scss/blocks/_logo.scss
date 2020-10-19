@@ -1,0 +1,11 @@
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $text-light;
+    font-family: 'Raleway', sans-serif;
+    font-size: 34px;
+    &__icon{
+        fill: $text-light;
+    }
+}

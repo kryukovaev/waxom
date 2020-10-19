@@ -1,0 +1,20 @@
+.nav {
+    color: $text-light;
+    font-size: 14px;
+    margin: 0 0 0 165px;
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        transition: 0.3s color linear;
+    }
+
+    &__item + &__item {
+        margin: 0 0 0 29px;
+    }
+
+    &__item:hover {
+        color: $hover-color;
+    }
+}

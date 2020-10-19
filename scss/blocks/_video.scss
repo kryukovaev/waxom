@@ -1,0 +1,19 @@
+.video {
+    position: relative;
+    background-image: url("../img/video-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $icon-color;
+    color: $text-light;
+    &:before{
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: $brownout-color;
+        opacity: 0.5;
+    }
+}

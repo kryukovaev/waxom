@@ -1,0 +1,56 @@
+.services {
+    padding: 80px 0 80px 0;
+    &__list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item {
+        position: relative;
+        width: 24%;
+        text-align: center;
+    }
+
+    &__item:after {
+        position: absolute;
+        content: "";
+        width: 70px;
+        height: 3px;
+        background-color: $line-color;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.3s background-color linear;
+    }
+
+    &__icon {
+        fill: $icon-color;
+        margin: 0 0 24px 0;
+        transition: 0.3s fill linear;
+    }
+
+    &__title{
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        margin: 0 0 12px 0; 
+        transition: 0.3s color linear;
+    }
+    &__text{
+        line-height: 1.5;
+    }
+}
+
+.services__item:hover{
+    .services__icon {
+        fill: $hover-color;
+    }
+    .services__title {
+        color: $hover-color;
+    }
+}
+
+.services__item:hover.services__item:after {
+    background-color: $hover-color;
+}
