@@ -57,6 +57,15 @@ body{
     box-shadow: inset 0px -3px 0 0 $box-shadow-color;
 }
 
+.btn:hover,
+.btn:focus {
+    background-color: $hover-btn;
+}
+
+.btn:active{
+    background-color: rgba($hover-btn, 0.7);
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;

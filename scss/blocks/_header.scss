@@ -9,7 +9,22 @@
     padding: 40px 0 0 0;
     }
 
+    &__btn {
+        fill: $text-light;
+        transition: 0.3s fill linear;
+    }
+
     &__btn + &__btn {
         margin: 0 0 0 28px;
     }
+
+    &__btn:hover,
+    &__btn:focus {
+        fill: $hover-color;
+    }
+ 
+    &__btn:active {
+        fill: rgba($hover-color, 0.7); 
+    }
 }
+

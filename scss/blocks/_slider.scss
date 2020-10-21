@@ -34,8 +34,15 @@
     }
 
     &__btn-left:hover,
-    &__btn-right:hover {
+    &__btn-left:focus,
+    &__btn-right:hover,
+    &__btn-right:focus {
         fill: $hover-color;
+    }
+
+    &__btn-left:active,
+    &__btn-right:active {
+        fill: rgba($hover-color, 0.7);
     }
  
     &__suptitle {

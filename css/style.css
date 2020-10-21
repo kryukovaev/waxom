@@ -57,6 +57,15 @@ body {
           box-shadow: inset 0px -3px 0 0 #736357;
 }
 
+.btn:hover,
+.btn:focus {
+  background-color: #927b66;
+}
+
+.btn:active {
+  background-color: rgba(146, 123, 102, 0.7);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -87,8 +96,22 @@ body {
   padding: 40px 0 0 0;
 }
 
+.header__btn {
+  fill: #fff;
+  -webkit-transition: 0.3s fill linear;
+  transition: 0.3s fill linear;
+}
+
 .header__btn + .header__btn {
   margin: 0 0 0 28px;
+}
+
+.header__btn:hover, .header__btn:focus {
+  fill: #c7b299;
+}
+
+.header__btn:active {
+  fill: rgba(199, 178, 153, 0.7);
 }
 
 .logo {
@@ -122,17 +145,21 @@ body {
   display: flex;
 }
 
-.nav__item {
-  -webkit-transition: 0.3s color linear;
-  transition: 0.3s color linear;
-}
-
 .nav__item + .nav__item {
   margin: 0 0 0 29px;
 }
 
-.nav__item:hover {
+.nav__link {
+  -webkit-transition: 0.3s color linear;
+  transition: 0.3s color linear;
+}
+
+.nav__link:hover, .nav__link:focus {
   color: #c7b299;
+}
+
+.nav__link:active {
+  color: rgba(199, 178, 153, 0.7);
 }
 
 .slider {
@@ -177,8 +204,12 @@ body {
   fill: rgba(255, 255, 255, 0.5);
 }
 
-.slider__btn-left:hover, .slider__btn-right:hover {
+.slider__btn-left:hover, .slider__btn-left:focus, .slider__btn-right:hover, .slider__btn-right:focus {
   fill: #c7b299;
+}
+
+.slider__btn-left:active, .slider__btn-right:active {
+  fill: rgba(199, 178, 153, 0.7);
 }
 
 .slider__suptitle {

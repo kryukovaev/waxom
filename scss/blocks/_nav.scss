@@ -6,15 +6,21 @@
         display: flex;
     }
 
-    &__item {
-        transition: 0.3s color linear;
-    }
-
     &__item + &__item {
         margin: 0 0 0 29px;
     }
 
-    &__item:hover {
-        color: $hover-color;
+    &__link {
+        transition: 0.3s color linear;
+    }
+
+    &__link:hover,
+    &__link:focus {
+    color: $hover-color;
+}
+
+    &__link:active {
+        color: rgba($hover-color, 0.7);
     }
 }
+
