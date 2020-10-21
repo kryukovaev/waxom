@@ -1,0 +1,148 @@
+.project {
+    padding: 0 0 80px 0;
+    &__tabs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 40px 0;
+    }
+
+    &__tabs-btn {
+        font-size: 14px;
+        font-weight: 300;
+        color: $text-dark;
+        border: 1px solid #ebebeb;
+        padding: 9px 21px;
+        border-radius: 3px;
+        transition: 0.3s color linear, 0.3s background-color linear,;
+    }
+
+    &__tabs-btn:hover,
+    &__tabs-btn:focus {
+        color: $text-light;
+        background-color: $btn-color;
+    }
+
+    &__tabs-btn:active {
+        background-color: rgba($btn-color, 0.7);
+    }
+
+    &__tabs-btn + &__tabs-btn {
+        margin: 0 0 0 10px;
+    }
+
+    &__list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 32%;
+        margin: 0 0 30px 0;
+        position: relative;
+        transition: all 0.3s linear;
+    }
+
+    &__item:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(17, 17, 17, 0.7);
+        display: none;
+    }
+
+    &__item:hover:before {
+        display: block;
+    }
+
+    &__item:hover &__btn {
+        display: block;
+    }
+
+    &__item:hover &__item-wrap {
+        background-color: $hover-project;
+    }
+
+    &__item:hover &__item-wrap:before {
+        border-bottom: 10px solid $hover-project;
+    }
+
+    &__item:hover &__item-title {
+        color: $text-light;
+    }
+
+    &__item:hover &__item-text {
+        color: $hover-color;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+    }
+
+    &__item-wrap {
+        width: 100%;
+        position: relative;
+        background-color: $bg-project-color;
+        padding: 30px 28px 27px 28px;
+    }
+
+    &__item-wrap:before {
+        content: "";
+        position: absolute;
+        border: 15px solid transparent;
+        border-bottom: 10px solid $bg-project-color;
+        top: -25px;
+        left: 19px;
+    }
+
+    &__item-title {
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0 0 10px 0;
+        color: $hover-color;
+    }
+
+    &__item-text {
+        color: $text-project-color;
+    }
+
+
+    &__btn {
+        fill: $text-light;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: none;
+        transition: 0.3s fill linear;
+    }
+
+    &__btn-search{
+        margin: 0 0 0 28px;
+    }
+
+    &__btn-link:hover,
+    &__btn-search:hover,
+    &__btn-link:focus,
+    &__btn-search:focus {
+        fill:$hover-btn;
+    }
+
+    &__btn-link:active,
+    &__btn-search:active {
+        fill: rgba($hover-btn, 0.7);
+    }
+
+    &__button {
+        display: block;
+        margin: 10px auto 0;
+    }
+}
+

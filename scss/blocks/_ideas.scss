@@ -1,0 +1,32 @@
+.ideas {
+    background-color: $bg-section;
+    &__photo {
+        position: relative;
+        display: flex;
+        min-height: 482px;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+    }
+
+    &__img:first-child {
+        left: -30px;
+        z-index: 1;
+    }
+
+    &__img:nth-child(2) {
+        left: 200px;
+        z-index: 2;
+    }
+
+    &__img:last-child {
+        right: -30px;
+        z-index: 1;
+    }
+}
+
+    .ideas__img:hover {
+        z-index: 10;
+    }

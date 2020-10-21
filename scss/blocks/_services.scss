@@ -25,7 +25,7 @@
     }
 
     &__icon {
-        fill: $icon-color;
+        fill: $text-icon-color;
         margin: 0 0 24px 0;
         transition: 0.3s fill linear;
     }
@@ -36,6 +36,7 @@
         font-weight: 600;
         margin: 0 0 12px 0; 
         transition: 0.3s color linear;
+        color: $text-icon-color;
     }
     &__text{
         line-height: 1.5;
