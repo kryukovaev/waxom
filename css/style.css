@@ -100,7 +100,7 @@ body {
 
 .header {
   position: absolute;
-  z-index: 10;
+  z-index: 1;
   width: 100%;
 }
 
@@ -705,7 +705,7 @@ body {
 .statistics {
   background-image: -webkit-gradient(linear, left top, right top, from(#211b19), to(#4e3427));
   background-image: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
-  padding: 69px 0 60px 0;
+  padding: 120px 0 90px;
 }
 
 .statistics__list {
@@ -717,10 +717,51 @@ body {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 0 8%;
 }
 
 .statistics__item {
-  width: 125px;
+  position: relative;
+  width: 15%;
+  text-align: center;
+}
+
+.statistics__item:before {
+  position: absolute;
+  content: "";
+  width: 54px;
+  height: 44px;
+  background-image: url("../img/icons/statistics/1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: -65px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.statistics__item:after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  bottom: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.statistics__number {
+  font-size: 48px;
+  color: #fff;
+  margin: 0 0 15px 0;
+}
+
+.statistics__title {
+  font-size: 14px;
+  color: #c7b299;
+  text-transform: uppercase;
 }
 
 .partners {
