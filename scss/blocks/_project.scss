@@ -27,8 +27,12 @@
         background-color: rgba($btn-color, 0.7);
     }
 
-    &__tabs-btn + &__tabs-btn {
+    &__tabs-btn {
         margin: 0 0 0 10px;
+    }
+
+    &__tabs-btn:first-child {
+        margin: 0 0 0 0;
     }
 
     &__list {
@@ -143,6 +147,30 @@
     &__button {
         display: block;
         margin: 10px auto 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .project {
+        padding: 0 0 40px 0;
+    }
+
+    .project__tabs {
+        flex-wrap: wrap;
+        margin: 0 0 20px 0;
+    }
+
+    .project__tabs-btn {
+        margin: 0 0 15px 10px;
+    }
+
+    .project__tabs-btn:first-child {
+        margin: 0 0 15px 0;
+    }
+
+    .project__item {
+        width: 95%;
+        margin: 0 auto 20px;
     }
 }
 

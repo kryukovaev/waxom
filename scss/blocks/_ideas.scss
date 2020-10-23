@@ -30,3 +30,9 @@
     .ideas__img:hover {
         z-index: 10;
     }
+
+    @media (max-width: 480px) {
+        .ideas {
+            display: none;
+        }
+    }

@@ -85,3 +85,17 @@
         margin: 0 0 0 10px;
     }
 }
+
+@media (max-width: 480px) {
+ .slider {
+     height: 100%;
+     min-height: 150px;
+     background-position: center;
+ }
+
+    .slider__content,
+    .slider__btn-left,
+    .slider__btn-right {
+        display: none;
+    }
+}

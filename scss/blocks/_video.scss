@@ -72,3 +72,9 @@
         color: $hover-color;
     }
 }
+
+@media (max-width: 480px) {
+    .video {
+        display: none;
+    }
+}

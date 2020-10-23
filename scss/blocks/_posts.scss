@@ -103,7 +103,7 @@
 
     &__link {
         display: block;
-        position: absolute;
+        position: relative;
         font-size: 14px;
         color: $hover-color;
     }
@@ -138,7 +138,6 @@
     &__controls {
         display: flex;
         justify-content: center;
-        // align-items: center;
     }
 
     &__btn {
@@ -160,5 +159,18 @@
     &__btn + &__btn {
         margin: 0 0 0 8px;
     }
+}
 
+@media (max-width: 480px) {
+    .posts {
+        padding: 0 0 0 0;
+    }
+    .posts__item {
+        width: 95%;
+        margin: 0 auto 15px;
+    }
+
+    .posts__controls {
+        display: none;
+    }
 }
