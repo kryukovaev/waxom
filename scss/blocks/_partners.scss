@@ -5,7 +5,8 @@
     background-position: center;
     background-size: cover;
     background-color: $text-icon-color;
-    color: $text-light;
+    padding: 140px 0;
+    
     &:before{
         position: absolute;
         content: "";
@@ -15,5 +16,26 @@
         right: 0;
         background-color: $brownout-color;
     }
-}
 
+    &__list {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+     &__link:hover,
+     &__link:focus {
+        opacity: 0.7;
+     }
+
+     &__link:active {
+        opacity: 0.5;
+     }
+
+    &__link {
+        display: block;
+    }
+}

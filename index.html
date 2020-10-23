@@ -23,7 +23,7 @@
             <li class="nav__item">
               <a href="#" class="nav__link">Home</a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item selected">
               <a href="#" class="nav__link">About Us</a>
             </li>
             <li class="nav__item">
@@ -202,7 +202,7 @@
           </div>
           <div class="project__content">
             <div class="project__tabs">
-              <button class="project__tabs-btn" type="button">All</button>
+              <button class="project__tabs-btn selected" type="button">All</button>
               <button class="project__tabs-btn" type="button">Web Design</button>
               <button class="project__tabs-btn" type="button">Mobile App</button>
               <button class="project__tabs-btn" type="button">Illustration</button>
@@ -441,23 +441,23 @@
         <div class="container statistics__container">
           <h2 class="visually-hidden">Statistics</h2>
           <ul class="statistics__list">
-            <li class="statistics__item">
+            <li class="statistics__item statistics__item-clients">
               <p class="statistics__number">3587</p>
               <h3 class="statistics__title">Satisfied Clients</h3>
             </li>
-            <li class="statistics__item">
+            <li class="statistics__item statistics__item-coffee">
               <p class="statistics__number">207</p>
               <h3 class="statistics__title">Cups of coffee</h3>
             </li>
-            <li class="statistics__item">
+            <li class="statistics__item statistics__item-blog">
               <p class="statistics__number">2500</p>
               <h3 class="statistics__title">Blog posts</h3>
             </li>
-            <li class="statistics__item">
+            <li class="statistics__item statistics__item-likes">
               <p class="statistics__number">873</p>
               <h3 class="statistics__title">Likes</h3>
             </li>
-            <li class="statistics__item">
+            <li class="statistics__item statistics__item-launched">
               <p class="statistics__number">900</p>
               <h3 class="statistics__title">We launched</h3>
             </li>
@@ -478,60 +478,75 @@
               <img
                 class="posts__img"
                 src="img/posts/1.jpg"
-                alt="posts photo"
+                alt="feet photo"
                 width="370"
                 height="220"
               />
-              <p class="posts__date">30<span>Sep.</span></p>
-              <h3 class="posts__title">Lorem ipsum dolor sit amet</h3>
-              <p class="posts__text">
-                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
-              </p>
-              <a href="#" class="posts__link">Read More</a>
+              <div class="posts__date">
+                <span class="posts__date-day">30</span>
+                <span class="posts__date-month">Sep.</span>
+              </div>
+              <div class="posts__content">
+                <h3 class="posts__title">Lorem ipsum dolor sit amet</h3>
+                <p class="posts__text">
+                  Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+                </p>
+                <a href="#" class="posts__link">Read More</a>
+              </div>
             </li>
             <li class="posts__item">
               <img
                 class="posts__img"
                 src="img/posts/2.jpg"
-                alt="posts photo"
+                alt="keyboard photo"
                 width="370"
                 height="220"
               />
-              <p class="posts__date">30<span>Sep.</span></p>
-              <h3 class="posts__title">Lorem ipsum dolor sit amet</h3>
-              <p class="posts__text">
-                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
-              </p>
-              <a href="#" class="posts__link">Read More</a>
+              <div class="posts__date">
+                <span class="posts__date-day">30</span>
+                <span class="posts__date-month">Sep.</span>
+              </div>
+              <div class="posts__content">
+                <h3 class="posts__title">Lorem ipsum dolor sit amet</h3>
+                <p class="posts__text">
+                  Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+                </p>
+                <a href="#" class="posts__link">Read More</a>
+              </div>
             </li>
             <li class="posts__item">
               <img
                 class="posts__img"
                 src="img/posts/3.jpg"
-                alt="posts photo"
+                alt="ship photo"
                 width="370"
                 height="220"
               />
-              <p class="posts__date">30<span>Sep.</span></p>
-              <h3 class="posts__title">Lorem ipsum dolor sit amet</h3>
-              <p class="posts__text">
-                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
-              </p>
-              <a href="#" class="posts__link">Read More</a>
+              <div class="posts__date">
+                <span class="posts__date-day">30</span>
+                <span class="posts__date-month">Sep.</span>
+              </div>
+              <div class="posts__content">
+                <h3 class="posts__title">Lorem ipsum dolor sit amet</h3>
+                <p class="posts__text">
+                  Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+                </p>
+                <a href="#" class="posts__link">Read More</a>
+              </div>
             </li>
           </ul>
           <div class="posts__controls">
             <button class="posts__btn posts__btn-left" type="button">
-              <svg width="23px" height="23px" viewBox="0 0 23 23">
+              <svg width="24px" height="24px" viewBox="0 0 24 24">
                 <path
-                  d="M11.499695,1.0004883 C5.70166,1.0004883 1.0013428,5.7006836 1.0013428,11.499023 C1.0013428,17.297852 5.70166,21.997559 11.499695,21.997559 C17.298523,21.997559 21.998169,17.297852 21.998169,11.499023 C21.998169,5.7006836 17.298523,1.0004883 11.499695,1.0004883 ZM14.788696,11.996582 C14.788696,11.996582 10.249512,16.535156 10.249512,16.535156 C9.976929,16.808105 9.533386,16.808105 9.259949,16.535156 C8.987366,16.261719 8.987366,15.818359 9.259949,15.54541 C9.259949,15.54541 13.306824,11.499023 13.306824,11.499023 C13.306824,11.499023 9.259949,7.4521484 9.259949,7.4521484 C8.987366,7.179199 8.987366,6.73584 9.259949,6.4628906 C9.533386,6.189453 9.976929,6.189453 10.249512,6.4628906 C10.249512,6.4628906 14.788696,11.002441 14.788696,11.002441 C14.926758,11.139648 14.995178,11.3203125 14.993774,11.499023 C14.993774,11.6796875 14.926758,11.858398 14.788696,11.996582 Z"
+                  d="M8.582764,11.434082 C8.582764,11.434082 13.354858,6.661133 13.354858,6.661133 C13.641541,6.3745117 14.107849,6.3745117 14.395264,6.661133 C14.681885,6.9487305 14.681885,7.4155273 14.395264,7.7021484 C14.395264,7.7021484 10.140686,11.957031 10.140686,11.957031 C10.140686,11.957031 14.395264,16.21045 14.395264,16.21045 C14.681885,16.497559 14.681885,16.96289 14.395264,17.251465 C14.107849,17.538574 13.641541,17.538574 13.354858,17.251465 C13.354858,17.251465 8.582764,12.47998 8.582764,12.47998 C8.437683,12.334961 8.365662,12.14502 8.3671875,11.957031 C8.3671875,11.766602 8.437683,11.579102 8.582764,11.434082 ZM11.987427,1.0258789 C18.053467,1.0258789 22.972107,5.9433594 22.972107,12.010742 C22.972107,18.076172 18.053467,22.994629 11.987427,22.994629 C5.9211426,22.994629 1.0032349,18.076172 1.0032349,12.010742 C1.0032349,5.9433594 5.9211426,1.0258789 11.987427,1.0258789 ZM11.987427,21.52295 C17.232239,21.52295 21.50055,17.253418 21.50055,12.010742 C21.50055,6.7651367 17.232239,2.4970703 11.987427,2.4970703 C6.743164,2.4970703 2.4748535,6.7651367 2.4748535,12.010742 C2.4748535,17.253418 6.743164,21.52295 11.987427,21.52295 Z"
                 />
               </svg>
             </button>
             <button class="posts__btn posts__btn-right" type="button">
-              <svg width="23px" height="23px" viewBox="0 0 23 23">
+              <svg width="24px" height="24px" viewBox="0 0 24 24">
                 <path
-                  d="M11.499695,1.0004883 C5.70166,1.0004883 1.0013428,5.7006836 1.0013428,11.499023 C1.0013428,17.297852 5.70166,21.997559 11.499695,21.997559 C17.298523,21.997559 21.998169,17.297852 21.998169,11.499023 C21.998169,5.7006836 17.298523,1.0004883 11.499695,1.0004883 ZM14.788696,11.996582 C14.788696,11.996582 10.249512,16.535156 10.249512,16.535156 C9.976929,16.808105 9.533386,16.808105 9.259949,16.535156 C8.987366,16.261719 8.987366,15.818359 9.259949,15.54541 C9.259949,15.54541 13.306824,11.499023 13.306824,11.499023 C13.306824,11.499023 9.259949,7.4521484 9.259949,7.4521484 C8.987366,7.179199 8.987366,6.73584 9.259949,6.4628906 C9.533386,6.189453 9.976929,6.189453 10.249512,6.4628906 C10.249512,6.4628906 14.788696,11.002441 14.788696,11.002441 C14.926758,11.139648 14.995178,11.3203125 14.993774,11.499023 C14.993774,11.6796875 14.926758,11.858398 14.788696,11.996582 Z"
+                  d="M15.417053,11.434082 C15.417053,11.434082 10.644897,6.661133 10.644897,6.661133 C10.358215,6.3745117 9.891846,6.3745117 9.604492,6.661133 C9.31781,6.9487305 9.31781,7.4155273 9.604492,7.7021484 C9.604492,7.7021484 13.859192,11.957031 13.859192,11.957031 C13.859192,11.957031 9.604492,16.21045 9.604492,16.21045 C9.31781,16.497559 9.31781,16.96289 9.604492,17.251465 C9.891846,17.538574 10.358215,17.538574 10.644897,17.251465 C10.644897,17.251465 15.417053,12.47998 15.417053,12.47998 C15.562195,12.334961 15.634033,12.14502 15.63269,11.957031 C15.63269,11.766602 15.562195,11.579102 15.417053,11.434082 ZM12.012329,1.0258789 C5.946289,1.0258789 1.0275879,5.9433594 1.0275879,12.010742 C1.0275879,18.076172 5.946289,22.994629 12.012329,22.994629 C18.078613,22.994629 22.996582,18.076172 22.996582,12.010742 C22.996582,5.9433594 18.078613,1.0258789 12.012329,1.0258789 ZM12.012329,21.52295 C6.767639,21.52295 2.4992065,17.253418 2.4992065,12.010742 C2.4992065,6.7651367 6.767639,2.4970703 12.012329,2.4970703 C17.256592,2.4970703 21.524902,6.7651367 21.524902,12.010742 C21.524902,17.253418 17.256592,21.52295 12.012329,21.52295 Z"
                 />
               </svg>
             </button>
@@ -546,7 +561,7 @@
               <a href="#" class="partners__link">
                 <img
                   src="img/partners/1.png"
-                  alt="partner logo"
+                  alt="the barber"
                   class="partners__img"
                   width="210"
                   height="127"
@@ -557,7 +572,7 @@
               <a href="#" class="partners__link">
                 <img
                   src="img/partners/2.png"
-                  alt="partner logo"
+                  alt="delicious"
                   class="partners__img"
                   width="210"
                   height="210"
@@ -568,7 +583,7 @@
               <a href="#" class="partners__link">
                 <img
                   src="img/partners/3.png"
-                  alt="partner logo"
+                  alt="designers"
                   class="partners__img"
                   width="210"
                   height="130"
@@ -579,7 +594,7 @@
               <a href="#" class="partners__link">
                 <img
                   src="img/partners/4.png"
-                  alt="partner logo"
+                  alt="royal logo"
                   class="partners__img"
                   width="210"
                   height="164"
