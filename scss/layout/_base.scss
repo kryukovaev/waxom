@@ -97,3 +97,12 @@ body{
     clip: rect(0 0 0 0)
   }
 
+  .selected {
+     color: $hover-color;
+  }
+
+  button.selected {
+      background-color: $btn-color;
+      color: $text-light;
+  }
+

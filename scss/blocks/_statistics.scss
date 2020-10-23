@@ -19,14 +19,35 @@
     &__item:before {
         position: absolute;
         content: "";
-        width: 54px;
+        width: 44px;
         height: 44px;
-        background-image: url("../img/icons/statistics/1.svg");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         top: -65px;
         left: 50%;  
         transform: translateX(-50%);
+    }
+
+    &__item-clients:before {
+        background-image: url("../img/icons/statistics/1.svg");    
+    }
+
+    &__item-coffee:before {
+        background-image: url("../img/icons/statistics/2.svg");
+        width: 48px;
+    }
+
+    &__item-blog:before {
+        background-image: url("../img/icons/statistics/3.svg");
+    }
+
+    &__item-likes:before {
+        background-image: url("../img/icons/statistics/4.svg");
+    }
+
+    &__item-launched:before {
+        background-image: url("../img/icons/statistics/5.svg");
+        width: 54px;
     }
 
     &__item:after {
