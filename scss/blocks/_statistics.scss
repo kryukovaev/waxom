@@ -73,3 +73,17 @@
         text-transform: uppercase;
     }
 }
+
+@media (max-width: 480px) {
+    .statistics {
+        padding: 120px 0 0 0;
+    }
+    .statistics__item {
+        width: 50%;
+        margin: 0 0 150px 0;
+    }
+
+    .statistics__item:last-child {
+        margin: 0 0 100px 0;
+    }
+}

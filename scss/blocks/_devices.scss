@@ -1,11 +1,12 @@
 .devices {
+    
     &__container {
         background-image: url("../img/iphone.png");
         background-repeat: no-repeat;
         background-position: 50px bottom;
-        padding: 194px 0 183px 0;
         display: flex;
         justify-content: flex-end;
+        padding: 194px 0 183px 0;
     }
 
     &__content {
@@ -42,5 +43,28 @@
         left: 60px;
         top: 50%;
         transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 480px) {
+    .devices__container {
+        background-image: none;
+        padding: 40px 15px 40px 15px;
+    }
+
+    .devices__content {
+        max-width: 450px;
+    }
+
+    .devices__title {
+        margin: 0 0 15px 0
+    }
+
+    .devices__item {
+        padding: 0 0 0 30px;
+    }
+
+    .devices__item:before {
+        left: 0;
     }
 }
