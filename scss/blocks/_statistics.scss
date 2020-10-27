@@ -1,89 +1,93 @@
 .statistics {
-    background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
-    padding: 120px 0 90px;
+  background-image: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+  padding: 120px 0 90px;
 
-    &__list {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 0 8%;
-    }
+  &__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 8%;
+  }
 
-    &__item {
-        position: relative;
-        width: 15%;
-        text-align: center;
-    }
+  &__item {
+    position: relative;
+    width: 15%;
+    text-align: center;
+  }
 
-    &__item:before {
-        position: absolute;
-        content: "";
-        width: 44px;
-        height: 44px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        top: -65px;
-        left: 50%;  
-        transform: translateX(-50%);
-    }
+  &__item:before {
+    position: absolute;
+    content: "";
+    width: 44px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -65px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-    &__item-clients:before {
-        background-image: url("../img/icons/statistics/1.svg");    
-    }
+  &__item:hover &__number {
+    transform: scale(1.2);
+  }
 
-    &__item-coffee:before {
-        background-image: url("../img/icons/statistics/2.svg");
-        width: 48px;
-    }
+  &__item-clients:before {
+    background-image: url("../img/icons/statistics/1.svg");
+  }
 
-    &__item-blog:before {
-        background-image: url("../img/icons/statistics/3.svg");
-    }
+  &__item-coffee:before {
+    background-image: url("../img/icons/statistics/2.svg");
+    width: 48px;
+  }
 
-    &__item-likes:before {
-        background-image: url("../img/icons/statistics/4.svg");
-    }
+  &__item-blog:before {
+    background-image: url("../img/icons/statistics/3.svg");
+  }
 
-    &__item-launched:before {
-        background-image: url("../img/icons/statistics/5.svg");
-        width: 54px;
-    }
+  &__item-likes:before {
+    background-image: url("../img/icons/statistics/4.svg");
+  }
 
-    &__item:after {
-        position: absolute;
-        content: "";
-        width: 30px;
-        height: 2px;
-        background-color: $text-light;
-        bottom: -30px;
-        left: 50%;  
-        transform: translateX(-50%);
-    }
+  &__item-launched:before {
+    background-image: url("../img/icons/statistics/5.svg");
+    width: 54px;
+  }
 
-    &__number {
-        font-size: 48px;
-        color: $text-light;
-        margin: 0 0 15px 0;
-    }
+  &__item:after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: $text-light;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-    &__title {
-        font-size: 14px;
-        color: $hover-color;
-        text-transform: uppercase;
-    }
+  &__number {
+    font-size: 48px;
+    color: $text-light;
+    margin: 0 0 15px 0;
+  }
+
+  &__title {
+    font-size: 14px;
+    color: $hover-color;
+    text-transform: uppercase;
+  }
 }
 
 @media (max-width: 480px) {
-    .statistics {
-        padding: 120px 0 0 0;
-    }
-    .statistics__item {
-        width: 50%;
-        margin: 0 0 150px 0;
-    }
+  .statistics {
+    padding: 120px 0 0 0;
+  }
+  .statistics__item {
+    width: 50%;
+    margin: 0 0 150px 0;
+  }
 
-    .statistics__item:last-child {
-        margin: 0 0 100px 0;
-    }
+  .statistics__item:last-child {
+    margin: 0 0 100px 0;
+  }
 }
