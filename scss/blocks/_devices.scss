@@ -1,70 +1,69 @@
 .devices {
-    
-    &__container {
-        background-image: url("../img/iphone.png");
-        background-repeat: no-repeat;
-        background-position: 50px bottom;
-        display: flex;
-        justify-content: flex-end;
-        padding: 194px 0 183px 0;
-    }
+  &__container {
+    background-image: url("../img/iphone.png");
+    background-repeat: no-repeat;
+    background-position: 50px bottom;
+    display: flex;
+    justify-content: flex-end;
+    padding: 194px 0 183px 0;
+  }
 
-    &__content {
-       max-width: 665px;
-    }
+  &__content {
+    max-width: 665px;
+  }
 
-    &__title {
-        font-size: 30px;
-        font-weight: 600;
-        color: $text-icon-color;
-        font-family: 'raleway', sans-serif;
-        margin: 0 0 39px 0;
-    }
+  &__title {
+    font-size: 30px;
+    font-weight: 600;
+    color: $text-icon-color;
+    font-family: "raleway", sans-serif;
+    margin: 0 0 39px 0;
+  }
 
-    &__text {
-        line-height: 1.75;
-        margin: 0 0 35px 0;
-    }
+  &__text {
+    line-height: 1.75;
+    margin: 0 0 35px 0;
+  }
 
-    &__item {
-        position: relative;
-        line-height: 2;
-        padding: 0 0 0 113px;
-    }
+  &__item {
+    position: relative;
+    line-height: 2;
+    padding: 0 0 0 113px;
+  }
 
-    &__item:before {
-        position: absolute;
-        content: "";
-        width: 21px;
-        height: 21px;
-        background-image: url("../img/icons/arrow-devices.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        left: 60px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
+  &__item:before {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 21px;
+    background-image: url("../img/icons/arrow-devices.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 @media (max-width: 480px) {
-    .devices__container {
-        background-image: none;
-        padding: 40px 15px 40px 15px;
-    }
+  .devices__container {
+    background-image: none;
+    padding: 40px 15px 40px 15px;
+  }
 
-    .devices__content {
-        max-width: 450px;
-    }
+  .devices__content {
+    max-width: 450px;
+  }
 
-    .devices__title {
-        margin: 0 0 15px 0
-    }
+  .devices__title {
+    margin: 0 0 15px 0;
+  }
 
-    .devices__item {
-        padding: 0 0 0 30px;
-    }
+  .devices__item {
+    padding: 0 0 0 30px;
+  }
 
-    .devices__item:before {
-        left: 0;
-    }
+  .devices__item:before {
+    left: 0;
+  }
 }

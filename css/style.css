@@ -452,14 +452,14 @@ button.selected {
 .slider__suptitle {
   font-size: 36px;
   font-weight: 500;
-  font-family: 'raleway', sans-serif;
+  font-family: "raleway", sans-serif;
   margin: 0 0 14px 0;
 }
 
 .slider__title {
   font-size: 52px;
   font-weight: 800;
-  font-family: 'raleway', sans-serif;
+  font-family: "raleway", sans-serif;
   margin: 0 0 19px 0;
 }
 
@@ -903,11 +903,17 @@ button.selected {
 
 .video__content-icon {
   fill: #fff;
+  -webkit-transition: -webkit-transform 1s ease-out;
+  transition: -webkit-transform 1s ease-out;
+  transition: transform 1s ease-out;
+  transition: transform 1s ease-out, -webkit-transform 1s ease-out;
 }
 
 .video__content-btn:hover .video__content-icon,
 .video__content-btn:focus .video__content-icon {
   fill: #927b66;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .video__content-btn:active .video__content-icon {
@@ -915,7 +921,7 @@ button.selected {
 }
 
 .video__title {
-  font-family: 'raleway', sans-serif;
+  font-family: "raleway", sans-serif;
   font-size: 30px;
   font-weight: 500;
   margin: 0 0 20px 0;
@@ -958,7 +964,7 @@ button.selected {
   font-size: 30px;
   font-weight: 600;
   color: #555;
-  font-family: 'raleway', sans-serif;
+  font-family: "raleway", sans-serif;
   margin: 0 0 39px 0;
 }
 
@@ -1041,6 +1047,11 @@ button.selected {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.statistics__item:hover .statistics__number {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .statistics__item-clients:before {
@@ -1186,7 +1197,7 @@ button.selected {
   display: block;
   background-color: #252525;
   font-size: 12px;
-  font-family: 'roboto', sans-serif;
+  font-family: "roboto", sans-serif;
   border-radius: 0 0 3px 3px;
   padding: 5px 10px;
 }
@@ -1198,7 +1209,7 @@ button.selected {
 }
 
 .posts__title {
-  font-family: 'raleway', sans-serif;
+  font-family: "raleway", sans-serif;
   font-size: 20px;
   font-weight: 500;
   color: #555;
@@ -1258,10 +1269,16 @@ button.selected {
   width: 24px;
   height: 24px;
   fill: #d1d1d1;
+  -webkit-transition: 0.5s -webkit-transform linear;
+  transition: 0.5s -webkit-transform linear;
+  transition: 0.5s transform linear;
+  transition: 0.5s transform linear, 0.5s -webkit-transform linear;
 }
 
 .posts__btn:hover, .posts__btn:focus {
   fill: #c7b299;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .posts__btn:active {
@@ -1326,10 +1343,14 @@ button.selected {
 
 .partners__link {
   display: block;
+  -webkit-transition: 0.3s scale linear;
+  transition: 0.3s scale linear;
 }
 
 .partners__link:hover, .partners__link:focus {
   opacity: 0.7;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .partners__link:active {
